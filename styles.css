@@ -141,7 +141,7 @@ nav {
 /* end speaker styles */
 
 .pricing {
-    padding: 80px 2opx;
+    padding: 80px 20px;
     text-align: center;
 }
 
@@ -241,4 +241,104 @@ nav {
     color: #1d4ed8;
     position: absolute;
     left: 0;
+}
+/* FAQ Style */
+.faq {
+    padding: 80px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 0;
+}
+
+.faq-item summary {
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    list-style: none; 
+    position: relative;
+    padding-right: 30px;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    color: #1d4ed8;
+}
+.faq-item[open] summary::after {
+    content: "×";
+}
+
+.faq-item p {
+    margin-top: 12px;
+    color: #575757;
+    line-height: 1.6;
+}
+
+
+/* footer style */
+
+.site-footer {
+background-color: #0D1B2A;
+color: #94a3b8;
+padding: 50px 20px 30px 20px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo-image {
+    height: 32px;
+}
+
+.social-image {
+    display: flex;
+    gap: 16px;
+}
+
+.social-image img {
+    width: 18px;
+    height: 18px;
+}
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #334155;
+    margin-bottom: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer-links{
+    display: flex;
+    gap: 24px;
+}
+.footer-links a{
+color: #94a3b8;
+text-decoration: none;
 }
