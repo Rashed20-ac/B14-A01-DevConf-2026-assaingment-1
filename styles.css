@@ -29,7 +29,7 @@ nav {
 
 }
 
-ul {
+.nav-parent {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -38,7 +38,7 @@ ul {
 
 }
 
-ul li a {
+.nav-list {
     text-decoration: none;
     color: #575757;
     font-weight: 400;
@@ -139,3 +139,106 @@ ul li a {
 }
 
 /* end speaker styles */
+
+.pricing {
+    padding: 80px 2opx;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.pricing-subtitle {
+    color: #575757;
+    margin-bottom: 40px;
+}
+
+.pricing-grid-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    
+}
+
+.price-card {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-card-highlighted {
+    background-color: #0d1b2a;
+    color: #ffffff;
+}
+    
+
+.card-name {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.price-card-highlighted .card-name {
+    color: #93c5fd;
+}
+
+.card-price {
+    font-size: 36px;
+    margin-bottom: 4px;
+}
+
+.card-unit {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.price-card hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+
+.price-card-highlighted hr {
+    border: none;
+    border-top: 1px solid;
+    margin-bottom: 20px;
+}
+
+.price-card ul {
+    list-style: none;
+    margin-bottom: 24px;
+     padding: 0;
+}
+
+.price-card ul li {
+    font-size: 14px;
+    margin-bottom: 12px;
+    padding-left: 16px;
+    position: relative;
+}
+
+.plan-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.outline-btn {
+    background-color: transparent;
+    border: 1px solid #1d4ed8;
+    color: #1d4ed8;
+}
+
+.price-card ul li::before {
+    content: "•";
+    color: #1d4ed8;
+    position: absolute;
+    left: 0;
+}
